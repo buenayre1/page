@@ -1,0 +1,176 @@
+:root{
+  --terracota:#BB512D;
+  --terracota-profundo:#8E3A1C;
+  --arena:#E4D6C3;
+  --papel:#F8F3EC;
+  --tinta:#4A3526;
+  --tinta-suave:rgba(74,53,38,.64);
+  --linea:rgba(142,58,28,.32);
+  --display:'Cormorant Garamond',Georgia,serif;
+  --util:'Jost','Segoe UI',sans-serif;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:hidden}
+
+body{
+  font-family:var(--util);font-weight:400;color:var(--tinta);
+  background:
+    radial-gradient(60% 44% at 12% 0%,rgba(187,81,45,.10),transparent 60%),
+    var(--arena);
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+
+.envoltura{max-width:900px;margin:0 auto;padding:clamp(40px,7vw,84px) clamp(20px,5vw,32px) clamp(60px,8vw,100px)}
+
+/* ---------- encabezado ---------- */
+.encabezado{text-align:center;margin-bottom:clamp(38px,6vw,58px)}
+.sello-mini{width:64px;height:auto;margin:0 auto 22px;filter:drop-shadow(0 8px 18px rgba(74,53,38,.22))}
+.eyebrow{
+  display:inline-block;font-size:.68rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--terracota-profundo);margin-bottom:14px;
+}
+.encabezado h1{
+  font-family:var(--display);font-weight:500;font-style:italic;color:var(--terracota-profundo);
+  font-size:clamp(2rem,5.4vw,2.9rem);line-height:1.12;letter-spacing:-.01em;
+  max-width:18ch;margin:0 auto 18px;
+}
+.encabezado p{
+  max-width:52ch;margin:0 auto;font-size:.98rem;line-height:1.7;color:var(--tinta-suave);
+}
+.encabezado p strong{color:var(--tinta);font-weight:500}
+
+/* ---------- progreso ---------- */
+.progreso{
+  display:flex;align-items:center;gap:14px;justify-content:center;
+  margin-top:26px;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--tinta-suave);
+}
+.progreso__barra{width:min(220px,40vw);height:5px;border-radius:3px;background:rgba(142,58,28,.14);overflow:hidden}
+.progreso__relleno{height:100%;width:0%;background:var(--terracota);transition:width .5s var(--ease)}
+
+/* ---------- listado de tickets ---------- */
+.tours{display:flex;flex-direction:column;gap:26px}
+
+.ticket{
+  position:relative;
+  display:grid;grid-template-columns:1fr 40px 208px;
+  background:var(--papel);border-radius:6px;
+  box-shadow:0 16px 34px rgba(74,53,38,.12),0 2px 8px rgba(74,53,38,.06);
+  overflow:hidden;
+}
+
+.ticket__num{
+  font-family:var(--util);font-weight:500;font-size:.7rem;letter-spacing:.18em;
+  color:var(--terracota);text-transform:uppercase;
+}
+.ticket__main{padding:clamp(22px,3vw,30px)}
+.ticket__main h2{
+  font-family:var(--display);font-style:italic;font-weight:500;color:var(--tinta);
+  font-size:clamp(1.32rem,2.6vw,1.6rem);line-height:1.2;margin:6px 0 4px;
+}
+.ticket__meta{font-size:.76rem;letter-spacing:.05em;color:var(--tinta-suave);margin-bottom:16px}
+.ticket__meta b{color:var(--terracota-profundo);font-weight:500}
+
+.ticket__campo{font-size:.86rem;line-height:1.6;margin-bottom:10px}
+.ticket__campo:last-child{margin-bottom:0}
+.ticket__campo .etiqueta{
+  display:block;font-size:.63rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--terracota-profundo);margin-bottom:3px;
+}
+.ticket__ref{font-style:italic;color:var(--tinta-suave);font-size:.82rem}
+.ticket__nota{
+  margin-top:14px;padding:10px 12px;border-radius:4px;background:rgba(187,81,45,.08);
+  font-size:.78rem;line-height:1.55;color:var(--terracota-profundo);
+}
+
+.ticket__divisor{position:relative}
+.ticket__divisor::before{
+  content:"";position:absolute;top:14px;bottom:14px;left:50%;width:0;
+  border-left:2px dashed var(--linea);
+}
+.perforacion{
+  position:absolute;left:50%;transform:translateX(-50%);width:18px;height:18px;
+  border-radius:50%;background:var(--arena);z-index:2;
+}
+.perforacion.arriba{top:-9px}
+.perforacion.abajo{bottom:-9px}
+
+.ticket__stub{
+  padding:clamp(20px,2.6vw,26px) clamp(16px,2vw,20px);
+  background:linear-gradient(180deg,rgba(187,81,45,.05),rgba(187,81,45,.02));
+  display:flex;flex-direction:column;gap:12px;
+}
+.ticket__stub .etiqueta{
+  font-size:.62rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--terracota-profundo);margin-bottom:2px;
+}
+.chk-lista{list-style:none;display:flex;flex-direction:column;gap:9px}
+.chk{display:flex;align-items:flex-start;gap:9px;cursor:pointer}
+.chk input{
+  appearance:none;-webkit-appearance:none;flex:0 0 auto;
+  width:16px;height:16px;margin-top:2px;border-radius:3px;
+  border:1.5px solid rgba(142,58,28,.45);background:var(--papel);
+  cursor:pointer;position:relative;transition:background .2s,border-color .2s;
+}
+.chk input:checked{background:var(--terracota);border-color:var(--terracota)}
+.chk input:checked::after{
+  content:"";position:absolute;left:4px;top:1px;width:4px;height:8px;
+  border:solid var(--papel);border-width:0 2px 2px 0;transform:rotate(40deg);
+}
+.chk input:focus-visible{outline:2px solid var(--terracota-profundo);outline-offset:2px}
+.chk span{font-size:.78rem;line-height:1.45;color:var(--tinta)}
+.chk input:checked ~ span{color:var(--tinta-suave);text-decoration:line-through;text-decoration-color:rgba(74,53,38,.35)}
+
+@media (max-width:680px){
+  .ticket{grid-template-columns:1fr}
+  .ticket__divisor{height:22px}
+  .ticket__divisor::before{top:50%;bottom:auto;left:14px;right:14px;width:auto;height:0;
+    border-left:none;border-top:2px dashed var(--linea);}
+  .perforacion{top:50%;transform:translateY(-50%)}
+  .perforacion.arriba{left:-9px}
+  .perforacion.abajo{left:auto;right:-9px}
+  .ticket__stub{background:rgba(187,81,45,.04)}
+}
+
+/* ---------- pendientes generales ---------- */
+.pendientes{
+  position:relative;margin-top:12px;padding:clamp(30px,4vw,40px) clamp(24px,4vw,34px) clamp(26px,3.5vw,32px);
+  background:var(--papel);border-radius:6px;
+  box-shadow:0 16px 34px rgba(74,53,38,.12),0 2px 8px rgba(74,53,38,.06);
+}
+.sello{
+  position:absolute;top:-22px;left:clamp(24px,4vw,34px);
+  width:88px;height:88px;border-radius:50%;
+  border:2px solid var(--terracota-profundo);outline:2px solid var(--terracota-profundo);outline-offset:3px;
+  display:flex;align-items:center;justify-content:center;text-align:center;
+  transform:rotate(-8deg);background:var(--papel);
+  font-family:var(--util);font-weight:500;font-size:.56rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--terracota-profundo);line-height:1.3;padding:6px;
+}
+.pendientes h2{
+  font-family:var(--display);font-style:italic;font-weight:500;color:var(--tinta);
+  font-size:clamp(1.3rem,2.6vw,1.55rem);margin:20px 0 16px;padding-left:calc(88px - 20px);
+}
+.pendientes .chk-lista{gap:12px}
+.pendientes .chk span{font-size:.86rem;color:var(--tinta)}
+
+@media (max-width:520px){
+  .sello{position:static;transform:rotate(-4deg);margin-bottom:16px}
+  .pendientes h2{padding-left:0}
+}
+
+/* ---------- pie ---------- */
+.pie{
+  margin-top:clamp(36px,5vw,50px);text-align:center;
+  font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--tinta-suave);line-height:2;
+}
+.pie a{color:var(--terracota-profundo);text-decoration:none;border-bottom:1px solid rgba(142,58,28,.3)}
+.pie a:hover,.pie a:focus-visible{color:var(--terracota)}
+
+:focus-visible{outline:2px solid var(--terracota-profundo);outline-offset:3px}
+
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important}
+}

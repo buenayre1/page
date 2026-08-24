@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+
+<title>Resumen de tours · Buen Ayre Tours</title>
+
+<link rel="icon" href="favicon.ico" sizes="any">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/resumen-tours.css">
+</head>
+<body>
+
+<div class="envoltura">
+
+  <header class="encabezado">
+    <img class="sello-mini" src="assets/seal.png" width="88" height="88" alt="">
+    <span class="eyebrow">Buen Ayre Tours · Para Débora</span>
+    <h1>Resumen de tours, para confirmar</h1>
+    <p>
+      Organicé lo que se escucha en tus audios en <strong>7 fichas</strong>, una por tour.
+      Revisá que el recorrido y lo que incluye esté bien, y marcá los puntos de cada
+      "a confirmar" a medida que me los vayas contestando. Lo que falta son sobre todo
+      precios.
+    </p>
+    <div class="progreso">
+      <span id="progreso-contador">0 de 17 confirmados</span>
+      <span class="progreso__barra"><span class="progreso__relleno" id="progreso-relleno"></span></span>
+    </div>
+  </header>
+
+  <main class="tours">
+
+    <!-- 1. City Tour tradicional -->
+    <article class="ticket">
+      <div class="ticket__main">
+        <span class="ticket__num">N.º 01</span>
+        <h2>City Tour tradicional</h2>
+        <p class="ticket__meta"><b>4 horas</b> · privado, precio según cantidad de personas</p>
+        <p class="ticket__campo">
+          <span class="etiqueta">Incluye</span>
+          Transporte, guía bilingüe, pick up y drop off en el alojamiento.
+        </p>
+        <p class="ticket__campo">
+          <span class="etiqueta">Recorrido</span>
+          Plaza de Mayo, San Telmo, La Boca, Puerto Madero, Recoleta y Palermo, con paradas en Plaza de Mayo, Caminito y Recoleta.
+        </p>
+        <p class="ticket__campo">
+          <span class="etiqueta">Precio</span>
+          A definir. <span class="ticket__ref">Referencia: último privado cobrado a USD 250 (3 horas, 6 personas), de los cuales USD 108 fueron transporte.</span>
+        </p>
+      </div>
+      <div class="ticket__divisor"><span class="perforacion arriba"></span><span class="perforacion abajo"></span></div>
+      <div class="ticket__stub">
+        <span class="etiqueta">A confirmar</span>
+        <ul class="chk-lista">
+          <li><label class="chk" for="t1-1"><input type="checkbox" id="t1-1"><span>¿Precio final o "desde"?</span></label></li>
+          <li><label class="chk" for="t1-2"><input type="checkbox" id="t1-2"><span>¿Rango de personas por grupo?</span></label></li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- 2. Tour judío -->
+    <article class="ticket">
+      <div class="ticket__main">
+        <span class="ticket__num">N.º 02</span>
+        <h2>Tour judío</h2>
+        <p class="ticket__meta"><b>3 o 5 horas</b> · la de 5 incluye almuerzo en Once</p>
+        <p class="ticket__campo">
+          <span class="etiqueta">Incluye</span>
+          Pick up y drop off en hoteles, guía bilingüe, recorrido por Once, Templo de Paso, AMIA, Museo Judío y Templo Libertad (primera sinagoga de Buenos Aires), y la plaza donde estaba la embajada de Israel.
+        </p>
+        <p class="ticket__campo">
+          <span class="etiqueta">No incluye</span>
+          Entradas a AMIA y Museo Judío / Templo Libertad (se pagan aparte). AMIA ~45 min con guía propia, museo ~45 min mínimo.
+        </p>
+        <p class="ticket__campo">
+          <span class="etiqueta">Descuentos</span>
+          Menores de 12 no abonan. Residentes argentinos tienen precio diferencial.
+        </p>
+        <p class="ticket__campo">
+          <span class="etiqueta">Precio</span>
+          A definir cada modalidad (3 y 5 horas).
+        </p>
+        <div class="ticket__nota">Los domingos está todo cerrado: no se puede visitar nada.</div>
+      </div>
+      <div class="ticket__divisor"><span class="perforacion arriba"></span><span class="perforacion abajo"></span></div>
+      <div class="ticket__stub">
+        <span class="etiqueta">A confirmar</span>
+        <ul class="chk-lista">
+          <li><label class="chk" for="t2-1"><input type="checkbox" id="t2-1"><span>¿Cómo mostrar las entradas: sin monto, o "desde" un valor?</span></label></li>
+          <li><label class="chk" for="t2-2"><input type="checkbox" id="t2-2"><span>Precio final de cada modalidad (3 h / 5 h)</span></label></li>
+          <li><label class="chk" for="t2-3"><input type="checkbox" id="t2-3"><span>Precio diferencial para residentes</span></label></li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- 3. Tour de Tigre -->
+    <article class="ticket">
+      <div class="ticket__main">
+        <span class="ticket__num">N.º 03</span>
+        <h2>Tour de Tigre <span style="font-style:normal;font-size:.6em;color:var(--tinta-suave)">(Half Day)</span></h2>
+        <p class="ticket__meta"><b>6 horas</b></p>
+        <p class="ticket__campo">
+          <span class="etiqueta">Incluye</span>
+          Traslado, guía bilingüe, navegación "Cinco Ríos" (1 h 15), visita a Avenida Victorica y Puerto de Frutos, almuerzo liviano, pick up y drop off.
+        </p>
+        <p class="ticket__campo">
+          <span class="etiqueta">Precio</span>
+          A definir.
+        </p>
+      </div>
+      <div class="ticket__divisor"><span class="perforacion arriba"></span><span class="perforacion abajo"></span></div>
+      <div class="ticket__stub">
+        <span class="etiqueta">A confirmar</span>
+        <ul class="chk-lista">
+          <li><label class="chk" for="t3-1"><input type="checkbox" id="t3-1"><span>Precio</span></label></li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- 4. Día de Campo -->
+    <article class="ticket">
+      <div class="ticket__main">
+        <span class="ticket__num">N.º 04</span>
+        <h2>Día de Campo <span style="font-style:normal;font-size:.6em;color:var(--tinta-suave)">San Antonio de Areco</span></h2>
+        <p class="ticket__meta"><b>9 horas</b></p>
+        <p class="ticket__campo">
+          <span class="etiqueta">Incluye</span>
+          Traslado, pick up y drop off, guía bilingüe, visita corta al pueblo de Areco (posible parada en fábrica de chocolates y platería), día completo en estancia con empanadas, asado, destrezas criollas, folclore y doma india.
+        </p>
+        <p class="ticket__campo">
+          <span class="etiqueta">Precio</span>
+          A definir.
+        </p>
+        <div class="ticket__nota">Pendiente: versión orientada a turismo ortodoxo. Todavía no está organizada, se suma más adelante.</div>
+      </div>
+      <div class="ticket__divisor"><span class="perforacion arriba"></span><span class="perforacion abajo"></span></div>
+      <div class="ticket__stub">
+        <span class="etiqueta">A confirmar</span>
+        <ul class="chk-lista">
+          <li><label class="chk" for="t4-1"><input type="checkbox" id="t4-1"><span>Precio</span></label></li>
+          <li><label class="chk" for="t4-2"><input type="checkbox" id="t4-2"><span>¿La parada en fábrica de chocolates / platería va siempre, o es opcional?</span></label></li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- 5. Tango Show -->
+    <article class="ticket">
+      <div class="ticket__main">
+        <span class="ticket__num">N.º 05</span>
+        <h2>Tango Show</h2>
+        <p class="ticket__meta">Dos modalidades posibles</p>
+        <p class="ticket__campo">
+          <span class="etiqueta">Modalidad A</span>
+          Venta del show, sin acompañamiento de Débora.
+        </p>
+        <p class="ticket__campo">
+          <span class="etiqueta">Modalidad B</span>
+          Débora acompaña: cena show + traslado propio de ida y vuelta al alojamiento. Más cara por el vehículo.
+        </p>
+        <div class="ticket__nota">Las casas de tango suelen ofrecer su propio traslado dentro de un rango de hoteles, por eso suele convenir más la Modalidad A.</div>
+      </div>
+      <div class="ticket__divisor"><span class="perforacion arriba"></span><span class="perforacion abajo"></span></div>
+      <div class="ticket__stub">
+        <span class="etiqueta">A confirmar</span>
+        <ul class="chk-lista">
+          <li><label class="chk" for="t5-1"><input type="checkbox" id="t5-1"><span>¿Se ofrecen las dos modalidades en la web, o solo la A?</span></label></li>
+          <li><label class="chk" for="t5-2"><input type="checkbox" id="t5-2"><span>Precio de cada modalidad</span></label></li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- 6. Walking Tour -->
+    <article class="ticket">
+      <div class="ticket__main">
+        <span class="ticket__num">N.º 06</span>
+        <h2>Walking Tour</h2>
+        <p class="ticket__meta"><b>3 horas</b> · posible extensión a 4 llegando a Palermo</p>
+        <p class="ticket__campo">
+          <span class="etiqueta">Incluye</span>
+          Traslado en colectivo (transporte público). Estilo "como lo vive un local".
+        </p>
+        <p class="ticket__campo">
+          <span class="etiqueta">Recorrido de referencia</span>
+          Obelisco → Diagonal Norte → Plaza de Mayo → San Telmo → Paseo Colón → Caminito (Museo de la Pasión Boquense) → Puerto Madero → Plaza de Mayo.
+        </p>
+        <p class="ticket__campo">
+          <span class="etiqueta">Precio</span>
+          A definir.
+        </p>
+        <div class="ticket__nota">Experiencia todavía no muy aceitada: pocas veces realizada.</div>
+      </div>
+      <div class="ticket__divisor"><span class="perforacion arriba"></span><span class="perforacion abajo"></span></div>
+      <div class="ticket__stub">
+        <span class="etiqueta">A confirmar</span>
+        <ul class="chk-lista">
+          <li><label class="chk" for="t6-1"><input type="checkbox" id="t6-1"><span>Precio</span></label></li>
+          <li><label class="chk" for="t6-2"><input type="checkbox" id="t6-2"><span>¿Publicar ya en la web o esperar a tener más rodaje?</span></label></li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- 7. Cooking Class -->
+    <article class="ticket">
+      <div class="ticket__main">
+        <span class="ticket__num">N.º 07</span>
+        <h2>Cooking Class <span style="font-style:normal;font-size:.6em;color:var(--tinta-suave)">Empanadas y alfajores</span></h2>
+        <p class="ticket__meta"><b>3 horas</b> · en su casa, Villa del Parque · hasta 3 personas</p>
+        <p class="ticket__campo">
+          <span class="etiqueta">Incluye</span>
+          Todos los ingredientes y bebidas (vino tinto y blanco). No requiere experiencia previa de cocina.
+        </p>
+        <p class="ticket__campo">
+          <span class="etiqueta">Actividad</span>
+          Masa y tapas de alfajores, corte y cocción del relleno de empanadas, armado de alfajores (dulce de leche + coco), técnica de repulgue, charla sobre comida típica argentina e historia, y degustación final (lo que sobra se lo llevan).
+        </p>
+        <p class="ticket__campo">
+          <span class="etiqueta">Disponibilidad</span>
+          Lunes a viernes, mientras sus hijos están en la escuela. En temporada alta dispone de patio acondicionado.
+        </p>
+        <p class="ticket__campo">
+          <span class="etiqueta">Precio</span>
+          A definir, según costo de ingredientes y vinos.
+        </p>
+      </div>
+      <div class="ticket__divisor"><span class="perforacion arriba"></span><span class="perforacion abajo"></span></div>
+      <div class="ticket__stub">
+        <span class="etiqueta">A confirmar</span>
+        <ul class="chk-lista">
+          <li><label class="chk" for="t7-1"><input type="checkbox" id="t7-1"><span>Precio</span></label></li>
+          <li><label class="chk" for="t7-2"><input type="checkbox" id="t7-2"><span>¿Disponibilidad solo en temporada alta, o todo el año?</span></label></li>
+        </ul>
+      </div>
+    </article>
+
+  </main>
+
+  <section class="pendientes">
+    <div class="sello">Pendiente<br>general</div>
+    <h2>Antes de subir todo a la web</h2>
+    <ul class="chk-lista">
+      <li><label class="chk" for="g-1"><input type="checkbox" id="g-1"><span>Precios definitivos de los 7 tours / experiencias</span></label></li>
+      <li><label class="chk" for="g-2"><input type="checkbox" id="g-2"><span>Definir si se muestran precios fijos, "desde", o a consultar</span></label></li>
+      <li><label class="chk" for="g-3"><input type="checkbox" id="g-3"><span>Confirmar política de menores y residentes: ¿aplica a todos los tours o solo al judío?</span></label></li>
+    </ul>
+  </section>
+
+  <footer class="pie">
+    Buen Ayre Tours · Buenos Aires, Argentina<br>
+    <span id="anio"></span>
+  </footer>
+
+</div>
+
+<script src="js/resumen-tours.js"></script>
+</body>
+</html>
