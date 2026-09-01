@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- BOCETO EN REVISIÓN: sacar esta línea al publicar como index.html -->
+<meta name="robots" content="noindex, nofollow">
+
+<title>Buen Ayre Tours · Private tours in Buenos Aires</title>
+<meta name="description" content="Private, personalized tours in Buenos Aires with Débora, a licensed local guide. City tour, Jewish heritage, Tigre Delta, estancia day, walking tour and a home cooking class.">
+
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Buen Ayre Tours · Private tours in Buenos Aires">
+<meta property="og:description" content="Private, personalized tours in Buenos Aires with a licensed local guide.">
+<meta property="og:image" content="https://buenayretours.com.ar/img/hero-plaza-de-mayo.jpg">
+<meta property="og:url" content="https://buenayretours.com.ar/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/sitio.css">
+</head>
+<body>
+
+<a class="saltar" href="#tours"><span data-lang="en">Skip to the tours</span><span data-lang="es">Ir a los tours</span></a>
+
+<!-- ════════ BARRA ════════ -->
+<header class="barra" id="barra">
+  <div class="barra__in">
+    <a class="marca" href="#inicio">
+      <img src="img/sello.png" width="44" height="44" alt="" loading="eager">
+      <span class="marca__txt">Buen Ayre <em>Tours</em></span>
+    </a>
+
+    <nav class="menu" id="menu" aria-label="Main">
+      <a href="#tours"><span data-lang="en">Tours</span><span data-lang="es">Tours</span></a>
+      <a href="#sobre-mi"><span data-lang="en">About me</span><span data-lang="es">Sobre mí</span></a>
+      <a href="#resenas"><span data-lang="en">Reviews</span><span data-lang="es">Reseñas</span></a>
+      <a href="#faq"><span data-lang="en">FAQ</span><span data-lang="es">Preguntas</span></a>
+      <a href="#contacto"><span data-lang="en">Contact</span><span data-lang="es">Contacto</span></a>
+    </nav>
+
+    <div class="barra__fin">
+      <div class="idioma" role="group" aria-label="Language">
+        <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+        <span aria-hidden="true">·</span>
+        <button type="button" data-set-lang="es" aria-pressed="false">ES</button>
+      </div>
+      <a class="btn btn--wa" href="#contacto" data-wa data-wa-msg="Hi Débora! I found your website and I'd like to ask about a tour in Buenos Aires.">
+        <svg viewBox="0 0 24 24" aria-hidden="true" width="15" height="15"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.7 15L2 22l5.2-1.3A10 10 0 1 0 12 2m0 1.8a8.2 8.2 0 1 1-4.2 15.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 0 1 12 3.8m-3.3 4c-.2 0-.5 0-.7.4-.2.4-.9.9-.9 2.2s.9 2.5 1 2.7c.2.2 1.8 2.9 4.5 3.9 2.2.8 2.7.7 3.2.6.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2l-.6-.3-1.6-.8c-.2 0-.4-.1-.6.1l-.8 1c-.2.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4 0-.5.2-.7l.4-.5.3-.5v-.5l-.8-1.9c-.2-.4-.4-.4-.6-.4z"/></svg>
+        <span data-lang="en">WhatsApp</span><span data-lang="es">WhatsApp</span>
+      </a>
+      <button class="hamb" id="hamb" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+        <i></i><i></i><i></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ════════ HERO ════════ -->
+<header class="hero" id="inicio">
+  <img class="hero__foto" src="img/hero-plaza-de-mayo.jpg" alt="Débora with a small group at Plaza de Mayo, with the Casa Rosada behind them at sunset" width="1200" height="944" loading="eager" fetchpriority="high">
+  <div class="hero__velo"></div>
+
+  <div class="hero__in wrap">
+    <img class="hero__sello" src="img/sello-invertido.png" width="230" height="230" alt="Buen Ayre Tours" loading="eager">
+
+    <span class="eyebrow">
+      <span data-lang="en">Private tours · Buenos Aires</span>
+      <span data-lang="es">Tours privados · Buenos Aires</span>
+    </span>
+
+    <h1>
+      <span data-lang="en">Tours for every interest, experiences tailored to you.</span>
+      <span data-lang="es">Tours para todos los intereses, experiencias adaptadas a tus necesidades.</span>
+    </h1>
+
+    <svg class="viento viento--hero" viewBox="0 0 400 42" aria-hidden="true">
+      <path d="M2 27 C 72 6, 152 6, 212 20 S 342 36, 398 15"/>
+      <path d="M22 35 C 92 17, 168 17, 228 29 S 348 43, 398 27"/>
+      <path d="M64 18 C 114 4, 174 2, 218 11"/>
+    </svg>
+
+    <div class="hero__botones">
+      <a class="btn btn--claro" href="#contacto" data-wa data-wa-msg="Hi Débora! I found your website and I'd like to plan a tour in Buenos Aires.">
+        <span data-lang="en">Plan your tour</span><span data-lang="es">Planeá tu tour</span>
+      </a>
+      <a class="btn btn--linea" href="#tours">
+        <span data-lang="en">See the tours</span><span data-lang="es">Ver los tours</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ════════ ÍNDICE DE TOURS ════════ -->
+<nav class="indice" aria-label="Tours">
+  <a class="indice__it" href="#tour-1">
+    <svg class="viento wl" viewBox="0 0 400 20" aria-hidden="true"><path d="M2 13 C 90 2, 200 2, 290 9 S 370 15, 398 7"/></svg>
+    <span class="t">City Tour</span>
+    <span class="s"><span data-lang="en">The essentials, done right</span><span data-lang="es">Los imperdibles, bien contados</span></span>
+  </a>
+  <a class="indice__it" href="#tour-2">
+    <svg class="viento wl" viewBox="0 0 400 20" aria-hidden="true"><path d="M2 13 C 90 2, 200 2, 290 9 S 370 15, 398 7"/></svg>
+    <span class="t">Jewish BA</span>
+    <span class="s"><span data-lang="en">Heritage and modern life</span><span data-lang="es">Herencia y vida actual</span></span>
+  </a>
+  <a class="indice__it" href="#tour-3">
+    <svg class="viento wl" viewBox="0 0 400 20" aria-hidden="true"><path d="M2 13 C 90 2, 200 2, 290 9 S 370 15, 398 7"/></svg>
+    <span class="t">Tigre &amp; Delta</span>
+    <span class="s"><span data-lang="en">A morning on the river</span><span data-lang="es">Una mañana en el río</span></span>
+  </a>
+  <a class="indice__it" href="#tour-4">
+    <svg class="viento wl" viewBox="0 0 400 20" aria-hidden="true"><path d="M2 13 C 90 2, 200 2, 290 9 S 370 15, 398 7"/></svg>
+    <span class="t">Estancia</span>
+    <span class="s"><span data-lang="en">A day in the countryside</span><span data-lang="es">Un día de campo</span></span>
+  </a>
+  <a class="indice__it" href="#tour-5">
+    <svg class="viento wl" viewBox="0 0 400 20" aria-hidden="true"><path d="M2 13 C 90 2, 200 2, 290 9 S 370 15, 398 7"/></svg>
+    <span class="t">Walking Tour</span>
+    <span class="s"><span data-lang="en">The city on foot</span><span data-lang="es">La ciudad a pie</span></span>
+  </a>
+  <a class="indice__it" href="#tour-6">
+    <svg class="viento wl" viewBox="0 0 400 20" aria-hidden="true"><path d="M2 13 C 90 2, 200 2, 290 9 S 370 15, 398 7"/></svg>
+    <span class="t">My Kitchen</span>
+    <span class="s"><span data-lang="en">Empanadas &amp; alfajores</span><span data-lang="es">Empanadas y alfajores</span></span>
+  </a>
+</nav>
+
+<!-- ════════ TOURS ════════ -->
+<section class="seccion" id="tours">
+  <div class="wrap">
+    <div class="cabeza rv">
+      <span class="eyebrow"><span data-lang="en">Our tours</span><span data-lang="es">Nuestros tours</span></span>
+      <h2><span data-lang="en">Six ways to see Buenos Aires</span><span data-lang="es">Seis maneras de ver Buenos Aires</span></h2>
+      <svg class="viento viento--tit" viewBox="0 0 400 42" aria-hidden="true">
+        <path d="M2 27 C 72 6, 152 6, 212 20 S 342 36, 398 15"/>
+        <path d="M22 35 C 92 17, 168 17, 228 29 S 348 43, 398 27"/>
+        <path d="M64 18 C 114 4, 174 2, 218 11"/>
+      </svg>
+      <p class="lede">
+        <span data-lang="en">Every tour is private and adapts to your interests, your pace and the time you have. Pick-up and drop-off at your accommodation.</span>
+        <span data-lang="es">Todos los tours son privados y se adaptan a tus intereses, tu ritmo y el tiempo que tengas. Pick-up y drop-off en tu alojamiento.</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- ── 01 ── -->
+  <article class="tour rv" id="tour-1">
+    <div class="tour__fotos">
+      <img class="tour__f1" src="img/city-mafalda.jpg" alt="Two travelers sitting on the Mafalda bench in San Telmo" width="919" height="1150" loading="lazy">
+      <img class="tour__f2" src="img/city-caminito.jpg" alt="Colourful houses in Caminito, La Boca" width="903" height="1150" loading="lazy">
+    </div>
+    <div class="tour__txt">
+      <span class="tour__n">01</span>
+      <h3>
+        <span data-lang="en">Buenos Aires Essentials</span>
+        <span data-lang="es">Los imperdibles de la ciudad</span>
+      </h3>
+      <p class="tour__dur"><span data-lang="en">4 hours · private · with transport</span><span data-lang="es">4 horas · privado · con traslado</span></p>
+      <p class="tour__hook">
+        <span data-lang="en">A private introduction to the heart of Buenos Aires.</span>
+        <span data-lang="es">Descubrí la esencia de Buenos Aires en un recorrido privado y personalizado.</span>
+      </p>
+
+      <div class="tour__cuerpo" data-lang="en">
+        <p>We'll see the different faces of the city: the history and political life of Plaza de Mayo, the traditional, bohemian spirit of San Telmo, the immigrant culture and colour of La Boca — Caminito, with the Museo de la Pasión Boquense as an option — Puerto Madero, its past as a port and its modern present, and the parks and street life of Palermo.</p>
+        <p>It's for anyone who wants a first look at Buenos Aires, and to see it through the stories, the details and the eyes of a local guide.</p>
+        <p>The tour ends in Recoleta, one of the most elegant neighbourhoods in the city, known for its stately architecture, its green spaces and its cultural life. You can stay on to keep exploring, or I'll take you back to your hotel.</p>
+      </div>
+      <div class="tour__cuerpo" data-lang="es">
+        <p>En este recorrido descubriremos diferentes caras de Buenos Aires: la historia y la vida política en la Plaza de Mayo, el espíritu tradicional y bohemio de San Telmo, la cultura inmigrante y el color de La Boca (Caminito) con el Museo de la Pasión Boquense (opcional), Puerto Madero —su pasado como puerto y su presente moderno— y los espacios verdes y la vida urbana de Palermo.</p>
+        <p>Un recorrido pensado para quienes quieren tener una primera mirada de Buenos Aires, pero también descubrirla a través de historias, detalles y la mirada de un guía local.</p>
+        <p>El tour finaliza en Recoleta, uno de los barrios más elegantes y tradicionales de Buenos Aires, reconocido por su arquitectura señorial, sus espacios verdes y su rica vida cultural. Podés elegir permanecer allí para seguir explorando la zona o regresar a tu alojamiento.</p>
+      </div>
+
+      <div class="incluye">
+        <h4><span data-lang="en">Includes</span><span data-lang="es">Incluye</span></h4>
+        <ul>
+          <li><span data-lang="en">Private transport</span><span data-lang="es">Traslado privado</span></li>
+          <li><span data-lang="en">Bilingual guide, Spanish–English</span><span data-lang="es">Guía bilingüe español-inglés</span></li>
+          <li><span data-lang="en">Hotel pick-up and drop-off</span><span data-lang="es">Pick-up y drop-off en el hotel</span></li>
+        </ul>
+      </div>
+
+      <a class="btn btn--terra" href="#contacto" data-wa data-wa-msg="Hi Débora! I'd like to ask about the Buenos Aires Essentials city tour.">
+        <span data-lang="en">Ask about this tour</span><span data-lang="es">Consultar por este tour</span>
+      </a>
+    </div>
+  </article>
+
+  <!-- ── 02 ── -->
+  <article class="tour tour--inv rv" id="tour-2">
+    <div class="tour__fotos">
+      <img class="tour__f1" src="img/jewish-templo.jpg" alt="Interior of the Libertad Synagogue in Buenos Aires" width="895" height="1150" loading="lazy">
+      <img class="tour__f2" src="img/jewish-grupo-cafe.jpg" alt="Débora with a small group around a café table in Once" width="1150" height="862" loading="lazy">
+    </div>
+    <div class="tour__txt">
+      <span class="tour__n">02</span>
+      <h3>
+        <span data-lang="en">Classic Jewish City Tour</span>
+        <span data-lang="es">City tour judaico clásico</span>
+      </h3>
+      <p class="tour__dur"><span data-lang="en">4 hours · private · with transport</span><span data-lang="es">4 horas · privado · con traslado</span></p>
+      <p class="tour__hook">
+        <span data-lang="en">Trace the roots that shaped Jewish life in Buenos Aires.</span>
+        <span data-lang="es">Los comienzos de la comunidad judía en Argentina y su presente porteño.</span>
+      </p>
+
+      <div class="tour__cuerpo" data-lang="en">
+        <p>We start with pick-up at your accommodation and visit the places where Jewish life in Argentina began — and where it continues today.</p>
+        <p>We'll walk through Once, the traditional centre of Jewish commercial and community life, see some of its synagogues and follow the traces of the movements and generations that shaped the community.</p>
+        <p>We'll visit AMIA, the central institution of Argentine Jewish life, and the Jewish Museum of Buenos Aires, next to the historic Libertad Synagogue, to look at the history, the traditions and the legacy of the community here. We'll also see the Gran Templo de Paso, one of the most significant synagogues in the city, and Plaza Embajada de Israel, a place of memory that belongs to the community's recent history.</p>
+        <p>Along the way I'll share the stories and the context behind each place, so you understand not only what you're looking at but how Jewish life in Buenos Aires evolved, from immigration to today.</p>
+        <p>The order of the visits can change depending on the opening hours of each institution and where you're staying — I always arrange the route in the most convenient way.</p>
+      </div>
+      <div class="tour__cuerpo" data-lang="es">
+        <p>El recorrido comienza con pick-up en su alojamiento y nos lleva a conocer distintos lugares que forman parte de los comienzos de la comunidad judía en Argentina y su presente moderno porteño.</p>
+        <p>Visitaremos el barrio de Once, tradicional centro de la vida comercial y comunitaria judía, donde conoceremos algunas de sus sinagogas y descubriremos las huellas de las distintas corrientes y generaciones que fueron dando forma a la comunidad.</p>
+        <p>Visitaremos AMIA, institución central de la comunidad judía argentina, y el Museo Judío de Buenos Aires, ubicado junto a la histórica Sinagoga Libertad. También el Gran Templo de Paso, una de las sinagogas más significativas de Buenos Aires, y la Plaza Embajada de Israel, espacio de memoria y homenaje que forma parte de la historia reciente de la comunidad.</p>
+        <p>Durante el recorrido comparto historias y contexto para comprender no solo los lugares que visitamos, sino también la evolución de la vida judía en Buenos Aires, desde la inmigración hasta la actualidad.</p>
+        <p>El orden de las visitas puede variar de acuerdo con los horarios disponibles para el ingreso a las instituciones y con la ubicación de su alojamiento, buscando siempre organizar el recorrido de la manera más conveniente.</p>
+      </div>
+
+      <div class="incluye">
+        <h4><span data-lang="en">Includes</span><span data-lang="es">Incluye</span></h4>
+        <ul>
+          <li><span data-lang="en">Pick-up and drop-off at your accommodation</span><span data-lang="es">Pick-up y drop-off en su alojamiento</span></li>
+          <li><span data-lang="en">Private transport</span><span data-lang="es">Transporte privado</span></li>
+          <li><span data-lang="en">Bilingual guide, Spanish–English</span><span data-lang="es">Guía bilingüe español-inglés</span></li>
+          <li><span data-lang="en">Visit to Once and its synagogues</span><span data-lang="es">Visita al barrio de Once y sus sinagogas</span></li>
+        </ul>
+      </div>
+      <div class="incluye incluye--no">
+        <h4><span data-lang="en">Not included</span><span data-lang="es">No incluye</span></h4>
+        <ul>
+          <li><span data-lang="en">Entrance to AMIA</span><span data-lang="es">Entrada a AMIA</span></li>
+          <li><span data-lang="en">Entrance to the Jewish Museum and Libertad Synagogue</span><span data-lang="es">Entrada al Museo Judío y Sinagoga Libertad</span></li>
+          <li><span data-lang="en">Entrance to Templo de Paso</span><span data-lang="es">Entrada al Templo de Paso</span></li>
+        </ul>
+        <p class="incluye__pie"><span data-lang="en">Ask me for the current rates.</span><span data-lang="es">Consultar valores.</span></p>
+      </div>
+
+      <p class="aviso">
+        <span data-lang="en"><strong>Important:</strong> bring your passport — it is required to enter the institutions.</span>
+        <span data-lang="es"><strong>Importante:</strong> no olvidar el pasaporte para el ingreso a las instituciones.</span>
+      </p>
+
+      <a class="btn btn--terra" href="#contacto" data-wa data-wa-msg="Hi Débora! I'd like to ask about the Classic Jewish City Tour.">
+        <span data-lang="en">Ask about this tour</span><span data-lang="es">Consultar por este tour</span>
+      </a>
+    </div>
+  </article>
+
+  <!-- ── 03 ── -->
+  <article class="tour tour--ombu rv" id="tour-3">
+    <div class="tour__fotos">
+      <img class="tour__f1" src="img/tigre-navegacion.jpg" alt="A small group on the boat during the Delta navigation in Tigre" width="862" height="1150" loading="lazy">
+      <img class="tour__f2" src="img/tigre-club.jpg" alt="The Tigre Club, a Belle Époque building on Paseo Victorica" width="903" height="1150" loading="lazy">
+    </div>
+    <div class="tour__txt">
+      <span class="tour__n">03</span>
+      <h3>
+        <span data-lang="en">Tigre &amp; Delta + 5 Rivers Navigation</span>
+        <span data-lang="es">Tigre &amp; Delta + Navegación 5 Ríos</span>
+      </h3>
+      <p class="tour__dur"><span data-lang="en">5 hours · half day · with transport</span><span data-lang="es">5 horas · medio día · con traslado</span></p>
+      <p class="tour__hook">
+        <span data-lang="en">Experience the natural beauty and island life of the Delta.</span>
+        <span data-lang="es">Descubrí la naturaleza y el encanto de la vida isleña del Delta.</span>
+      </p>
+
+      <div class="tour__cuerpo" data-lang="en">
+        <p>Half a day north of the city, where Buenos Aires turns into water. We get to know the historic town of Tigre and sail the channels of the first section of the Paraná Delta on a tourist boat.</p>
+        <p>We start with pick-up at your accommodation and a scenic drive north, through riverside neighbourhoods and along the coast. Then we walk Paseo Victorica, the tree-lined riverfront on the Luján river, full of rowing clubs and period houses, with a look at the Belle Époque mansions from outside.</p>
+        <p>The navigation covers the five main rivers of the Delta — Luján, Carapachay, Angostura, Espera and Sarmiento — on a catamaran or a small boat. Along the way you'll learn how the islanders live: the houses on stilts, the floating schools, the plants and wildlife of the region.</p>
+        <p>We stop at Puerto de Frutos, the open-air market, where you can buy local crafts and souvenirs, with free time to grab something quick at the food stalls and cafés. Then back by car to the centre of Buenos Aires.</p>
+      </div>
+      <div class="tour__cuerpo" data-lang="es">
+        <p>Descubrí la belleza natural y arquitectónica de la zona norte del Gran Buenos Aires en esta escapada ideal de medio día. Conocemos la histórica ciudad de Tigre y recorremos los laberintos acuáticos de la primera sección del Delta del Paraná a bordo de una embarcación turística.</p>
+        <p>Comenzamos con el pick-up por su alojamiento y un traslado panorámico saliendo desde Buenos Aires rumbo al norte, cruzando pintorescos barrios y accesos costeros. Recorremos el Paseo Victorica, una costanera arbolada a orillas del río Luján repleta de clubes de remo y casonas de época, con vista exterior de las mansiones de la Belle Époque argentina.</p>
+        <p>Realizamos un paseo en catamarán o lancha turística por los 5 ríos principales del Delta (Luján, Carapachay, Angostura, Espera y Sarmiento). Durante el recorrido aprenderás sobre la vida de los isleños, las casas sobre pilotes, las escuelas flotantes y la flora y fauna de la región.</p>
+        <p>Visitamos el tradicional Puerto de Frutos, un mercado al aire libre donde podés comprar artesanías y recuerdos locales, con tiempo libre para comer algo rápido en los puestos gastronómicos de la zona. Después, retorno en vehículo al centro de la ciudad.</p>
+      </div>
+
+      <div class="incluye">
+        <h4><span data-lang="en">Includes</span><span data-lang="es">Incluye</span></h4>
+        <ul>
+          <li><span data-lang="en">Transport in a comfortable vehicle</span><span data-lang="es">Traslado en cómodo vehículo</span></li>
+          <li><span data-lang="en">Bilingual guide</span><span data-lang="es">Guía bilingüe</span></li>
+          <li><span data-lang="en">Delta navigation</span><span data-lang="es">Navegación</span></li>
+        </ul>
+      </div>
+      <div class="incluye incluye--no">
+        <h4><span data-lang="en">Not included</span><span data-lang="es">No incluye</span></h4>
+        <ul>
+          <li><span data-lang="en">Lunch — there's free time to eat or buy snacks</span><span data-lang="es">Almuerzo: se brinda tiempo libre para comer o comprar snacks</span></li>
+        </ul>
+      </div>
+
+      <a class="btn btn--terra" href="#contacto" data-wa data-wa-msg="Hi Débora! I'd like to ask about the Tigre & Delta half day tour.">
+        <span data-lang="en">Ask about this tour</span><span data-lang="es">Consultar por este tour</span>
+      </a>
+    </div>
+  </article>
+
+  <!-- ── 04 ── -->
+  <article class="tour tour--inv tour--ombu rv" id="tour-4">
+    <div class="tour__fotos">
+      <img class="tour__f1" src="img/estancia-destrezas.jpg" alt="A gaucho showing traditional horsemanship at the estancia" width="862" height="1150" loading="lazy">
+      <img class="tour__f2" src="img/estancia-grupo.jpg" alt="Débora with her group around the welcome table at the estancia" width="1600" height="1204" loading="lazy">
+    </div>
+    <div class="tour__txt">
+      <span class="tour__n">04</span>
+      <h3>
+        <span data-lang="en">The Estancia Experience</span>
+        <span data-lang="es">Experiencia Estancia Argentina</span>
+      </h3>
+      <p class="tour__dur"><span data-lang="en">9 hours · full day · San Antonio de Areco</span><span data-lang="es">9 horas · día completo · San Antonio de Areco</span></p>
+      <p class="tour__hook">
+        <span data-lang="en">A day immersed in Argentine countryside and gaucho traditions.</span>
+        <span data-lang="es">Vivencia la cuna de la tradición gauchesca argentina en un día entero de campo.</span>
+      </p>
+
+      <div class="tour__cuerpo" data-lang="en">
+        <p>A full day in the birthplace of Argentine gaucho tradition. We drive out of Buenos Aires into the pampas to walk the colonial streets of San Antonio de Areco, and then out to a traditional estancia for a real day in the country.</p>
+        <p>In Areco we walk the historic centre, its cobbled streets and traditional pulperías, with time to buy from the local silversmiths.</p>
+        <p>At the estancia we're welcomed with criollo empanadas. There's free time for a horse ride, and then the traditional lunch: a full asado over the coals — different cuts, achuras, salads and a criollo dessert — with drinks. After lunch comes the gaucho show: horsemanship, live folk music and traditional dancing. The day closes with a country merienda.</p>
+        <p>We head back to Buenos Aires in the late afternoon.</p>
+      </div>
+      <div class="tour__cuerpo" data-lang="es">
+        <p>Viajamos desde Buenos Aires hacia la pampa bonaerense para explorar las pintorescas calles coloniales de San Antonio de Areco. Luego nos dirigimos hacia una estancia tradicional para disfrutar de una experiencia auténtica de campo.</p>
+        <p>Visitamos el pueblo histórico de San Antonio de Areco: recorrido a pie por el casco histórico, sus calles adoquinadas y pulperías tradicionales, con tiempo para realizar compras a los orfebres y plateros locales.</p>
+        <p>Llegamos a la estancia, donde nos reciben con empanadas criollas. Tiempo libre para dar un paseo a caballo y almuerzo tradicional: asado completo a las brasas (variedad de cortes, achuras, ensaladas y postre criollo) acompañado de bebidas. Después, show de tradición gaucha: demostración de destrezas criollas a caballo, música folklórica en vivo y bailes tradicionales. El día finaliza con una rica merienda de campo.</p>
+        <p>Salida por la tarde hacia la ciudad de Buenos Aires.</p>
+      </div>
+
+      <div class="incluye">
+        <h4><span data-lang="en">Includes</span><span data-lang="es">Incluye</span></h4>
+        <ul>
+          <li><span data-lang="en">Return transport from Buenos Aires, air-conditioned vehicle</span><span data-lang="es">Traslado ida y vuelta desde Buenos Aires en vehículo con aire acondicionado</span></li>
+          <li><span data-lang="en">Bilingual guide throughout the day</span><span data-lang="es">Guía bilingüe (español e inglés) durante todo el recorrido</span></li>
+          <li><span data-lang="en">Full day in the country: welcome, criollo lunch and merienda</span><span data-lang="es">Día de campo completo con recepción, almuerzo criollo y merienda</span></li>
+          <li><span data-lang="en">Activities and shows at the estancia</span><span data-lang="es">Actividades y espectáculos en la estancia</span></li>
+        </ul>
+      </div>
+
+      <a class="btn btn--terra" href="#contacto" data-wa data-wa-msg="Hi Débora! I'd like to ask about The Estancia Experience day tour.">
+        <span data-lang="en">Ask about this tour</span><span data-lang="es">Consultar por este tour</span>
+      </a>
+    </div>
+  </article>
+
+  <!-- ── 05 ── -->
+  <article class="tour rv" id="tour-5">
+    <div class="tour__fotos">
+      <img class="tour__f1" src="img/walking-grupo.jpg" alt="A group with Débora under the great gomero tree in Recoleta" width="862" height="1150" loading="lazy">
+      <img class="tour__f2" src="img/walking-plaza.jpg" alt="A group walking through downtown Buenos Aires" width="862" height="1150" loading="lazy">
+    </div>
+    <div class="tour__txt">
+      <span class="tour__n">05</span>
+      <h3>
+        <span data-lang="en">Walking Tour</span>
+        <span data-lang="es">Recorrido a pie</span>
+      </h3>
+      <p class="tour__dur"><span data-lang="en">3 hours · on foot and by local bus</span><span data-lang="es">3 horas · a pie y en colectivo</span></p>
+      <p class="tour__hook">
+        <span data-lang="en">Walk through the stories that shaped Buenos Aires.</span>
+        <span data-lang="es">Conocé Buenos Aires caminando, como lo vive un local.</span>
+      </p>
+
+      <div class="tour__cuerpo" data-lang="en">
+        <p>Buenos Aires on foot. Walking through its neighbourhoods you see how the city changed over time.</p>
+        <p>We meet at Plaza de Mayo, where the country began, with a look from outside at the Casa Rosada, the Cabildo and the Metropolitan Cathedral. A short stretch of Avenida de Mayo takes us to Florida, the pedestrian street at the financial and tourist heart of downtown.</p>
+        <p>We continue along Avenida Corrientes — the theatre and bookshop artery known as the street that never sleeps — cross Avenida 9 de Julio for a photo stop at the Obelisco and the Teatro Colón, and head up Avenida Alvear, the most aristocratic street in the city, lined with embassies, twentieth-century palaces and designer shops. It leads us into Recoleta: the gardens of Plaza Alvear, the Basílica del Pilar and the walls of the famous Recoleta Cemetery.</p>
+        <p>Then we take a local bus to Palermo Soho, the liveliest food, design and nightlife area in the city. Tree-lined streets, small passageways and parrillas everywhere — a good place to stay on, sit down and eat something to close the day. The tour ends here.</p>
+      </div>
+      <div class="tour__cuerpo" data-lang="es">
+        <p>Conocé Buenos Aires caminando. Descubriremos a través de sus barrios cómo la ciudad fue cambiando a lo largo del tiempo.</p>
+        <p>Nos encontramos en Plaza de Mayo, punto de partida del país, con vista exterior de la Casa de Gobierno, el Cabildo y la Catedral Metropolitana. Llegamos a la calle Florida, pasando por un tramo pequeño de la Avenida de Mayo: recorrido por la famosa peatonal comercial, corazón financiero y turístico del centro porteño.</p>
+        <p>Continuamos por la Avenida Corrientes, breve paso por esta icónica arteria teatral y literaria conocida como la calle que nunca duerme. Cruce y parada fotográfica frente al Obelisco y el histórico Teatro Colón en la Avenida 9 de Julio. Seguimos hacia la Avenida Alvear, la más aristocrática de la ciudad, rodeada de embajadas, palacios del siglo XX y tiendas de alta costura, que nos lleva al barrio de Recoleta: los jardines de la Plaza Alvear, la Basílica de Nuestra Señora del Pilar y los alrededores del famoso Cementerio de la Recoleta.</p>
+        <p>Nos tomamos un colectivo para llegar a Palermo Soho, el polo gastronómico, cultural y de diseño más dinámico de Buenos Aires. Su trazado de calles arboladas, pasajes pintorescos y gran variedad de parrillas nos invitan a quedarnos caminando y sentarnos a comer algo para cerrar el día de la mejor manera. Aquí finaliza nuestro recorrido.</p>
+      </div>
+
+      <div class="incluye">
+        <h4><span data-lang="en">Includes</span><span data-lang="es">Incluye</span></h4>
+        <ul>
+          <li><span data-lang="en">Local bus fares</span><span data-lang="es">Viáticos (transporte público)</span></li>
+          <li><span data-lang="en">Bilingual guide</span><span data-lang="es">Guía bilingüe</span></li>
+        </ul>
+      </div>
+
+      <a class="btn btn--terra" href="#contacto" data-wa data-wa-msg="Hi Débora! I'd like to ask about the 3-hour walking tour.">
+        <span data-lang="en">Ask about this tour</span><span data-lang="es">Consultar por este tour</span>
+      </a>
+    </div>
+  </article>
+
+  <!-- ── 06 ── -->
+  <article class="tour tour--inv rv" id="tour-6">
+    <div class="tour__fotos">
+      <img class="tour__f1" src="img/cocina-empanadas.jpg" alt="Empanadas and alfajores made during the cooking class, with chimichurri" width="865" height="1150" loading="lazy">
+      <img class="tour__f2" src="img/cocina-manos.jpg" alt="Two guests cooking at the kitchen counter" width="862" height="1150" loading="lazy">
+    </div>
+    <div class="tour__txt">
+      <span class="tour__n">06</span>
+      <h3>
+        <span data-lang="en">Welcome to My Kitchen</span>
+        <span data-lang="es">Bienvenidos a casa</span>
+      </h3>
+      <p class="tour__dur"><span data-lang="en">3 hours · up to 3 people · Monday to Friday</span><span data-lang="es">3 horas · hasta 3 personas · de lunes a viernes</span></p>
+      <p class="tour__hook">
+        <span data-lang="en">Cook and taste two of Argentina's most beloved treats.</span>
+        <span data-lang="es">Cociná y disfrutá dos de los sabores más queridos de Argentina.</span>
+      </p>
+
+      <div class="tour__cuerpo" data-lang="en">
+        <p>We open the doors of our home for a private, hands-on cooking experience. In a real porteño kitchen you'll learn the secrets of two Argentine classics over a relaxed morning, in good company, with a glass of wine in your hand. No cooking experience needed.</p>
+        <p>We start with the dough for traditional cornstarch alfajores: rolling it out, cutting the discs, into the oven. While they bake we move to the savoury side — chopping the vegetables, mixing the classic seasoning and cooking the empanada filling slowly.</p>
+        <p>While it cooks we talk about the history of our food, where these dishes come from and the part that eating together plays in everyday life here.</p>
+        <p>As the filling cools we assemble the alfajores with plenty of dulce de leche and a snow of shredded coconut. Then we fill the empanadas, and I'll teach you the real criollo <em>repulgue</em> — the fold that seals them — before they go in the oven.</p>
+        <p>The experience ends by eating the empanadas hot, with the alfajores for dessert and a good Malbec.</p>
+      </div>
+      <div class="tour__cuerpo" data-lang="es">
+        <p>Abrimos las puertas de nuestra casa para darte la bienvenida a una experiencia gastronómica privada, práctica e interactiva. En la comodidad de un hogar porteño aprenderás los secretos de dos grandes clásicos de la cocina argentina, en una mañana distendida, con muy buena compañía y una copa de vino en la mano. No hace falta experiencia previa.</p>
+        <p>Comenzamos preparando la masa artesanal de los tradicionales alfajores de maicena: estiramos, cortamos las tapas y las llevamos al horno. Mientras se doran, pasamos a la parte salada picando los vegetales, mezclando los condimentos típicos y cocinando el relleno de las empanadas a fuego lento.</p>
+        <p>Durante la preparación nos tomamos un momento para charlar sobre la historia de nuestra gastronomía, el origen de estos platos y el rol que tienen las costumbres gastronómicas en nuestro día a día.</p>
+        <p>Aprovechamos el tiempo en que el relleno se enfría para ensamblar los alfajores con abundante dulce de leche y una lluvia de coco rallado. Luego armamos las empanadas, te enseñamos las técnicas del auténtico repulgue criollo y las mandamos a hornear.</p>
+        <p>La experiencia termina degustando las empanadas bien calientes y los alfajores de postre, acompañados por un excelente vino tinto Malbec.</p>
+      </div>
+
+      <div class="incluye">
+        <h4><span data-lang="en">Includes</span><span data-lang="es">Incluye</span></h4>
+        <ul>
+          <li><span data-lang="en">All ingredients, top quality</span><span data-lang="es">Todos los ingredientes de primera calidad</span></li>
+          <li><span data-lang="en">Drinks throughout: Argentine wine or beer</span><span data-lang="es">Bebidas durante toda la actividad: vino argentino o cerveza</span></li>
+          <li><span data-lang="en">The recipes, explained</span><span data-lang="es">Explicación de las recetas</span></li>
+          <li><span data-lang="en">A full tasting of everything you make</span><span data-lang="es">Degustación completa de lo elaborado</span></li>
+          <li><span data-lang="en">Packaging to take home whatever is left</span><span data-lang="es">Empaque para llevarte a casa todo lo que sobre</span></li>
+        </ul>
+      </div>
+
+      <a class="btn btn--terra" href="#contacto" data-wa data-wa-msg="Hi Débora! I'd like to ask about the Welcome to My Kitchen cooking class.">
+        <span data-lang="en">Ask about this experience</span><span data-lang="es">Consultar por esta experiencia</span>
+      </a>
+    </div>
+  </article>
+
+  <div class="sep">
+    <svg class="viento viento--sep" viewBox="0 0 400 42" aria-hidden="true">
+      <path d="M2 27 C 72 6, 152 6, 212 20 S 342 36, 398 15"/>
+      <path d="M22 35 C 92 17, 168 17, 228 29 S 348 43, 398 27"/>
+    </svg>
+  </div>
+
+  <div class="wrap">
+    <p class="tours__extra rv">
+      <span data-lang="en">I also arrange private airport transfers, tango nights, food experiences and custom activities. If you have something else in mind, ask me.</span>
+      <span data-lang="es">También organizo traslados privados desde y hacia aeropuertos, noches de tango, experiencias gastronómicas y actividades personalizadas. Si tenés otra idea, consultame.</span>
+    </p>
+  </div>
+</section>
+
+<!-- ════════ SOBRE MÍ ════════ -->
+<section class="seccion banda-arena" id="sobre-mi">
+  <div class="wrap sobre">
+    <div class="sobre__foto rv">
+      <img src="img/debora-retrato.jpg" alt="Débora with a traveller in front of a synagogue in Buenos Aires" width="939" height="1136" loading="lazy">
+    </div>
+    <div class="sobre__txt rv">
+      <span class="eyebrow"><span data-lang="en">About me</span><span data-lang="es">Sobre mí</span></span>
+      <h2><span data-lang="en">Hi, I'm Débora.</span><span data-lang="es">Hola, soy Débora.</span></h2>
+      <svg class="viento viento--tit" viewBox="0 0 400 42" aria-hidden="true">
+        <path d="M2 27 C 72 6, 152 6, 212 20 S 342 36, 398 15"/>
+        <path d="M22 35 C 92 17, 168 17, 228 29 S 348 43, 398 27"/>
+        <path d="M64 18 C 114 4, 174 2, 218 11"/>
+      </svg>
+
+      <div data-lang="en">
+        <p>I was born in Rosario and have called Buenos Aires home since 2012. I'm a licensed Buenos Aires tour guide and an English literary translator, with a deep passion for the city I chose to make my home.</p>
+        <p>What led me to become a tour guide? My passion for traveling. From a very young age I was fortunate to travel often, and I always listened with admiration to the stories and insights shared by the guides who accompanied me. I was fascinated by the way they brought each place to life. I believe those experiences were the starting point of my curiosity and my desire to keep learning.</p>
+        <p>Since moving here, I've never stopped discovering new corners, stories and details that make Buenos Aires so unique. Its architecture, history, culture, food and, above all, its people continue to surprise me.</p>
+        <p>I created Buen Ayre Tours to share the city I love through private and personalized experiences, adapting each tour to the interests, pace and needs of every traveler.</p>
+        <p>My goal? For you to fall in love with Buenos Aires, too.</p>
+      </div>
+      <div data-lang="es">
+        <p>Nací en Rosario y vivo en Buenos Aires desde 2012. Soy guía de turismo matriculada y traductora literaria de inglés, con una pasión profunda por la ciudad que elegí como casa.</p>
+        <p>¿Qué me llevó a ser guía? Mi pasión por viajar. Desde muy chica tuve la suerte de viajar seguido, y siempre escuché con admiración las historias que compartían los guías que me acompañaban. Me fascinaba la manera en que hacían que cada lugar cobrara vida. Creo que ahí empezó mi curiosidad y mis ganas de seguir aprendiendo.</p>
+        <p>Desde que me mudé no dejé de descubrir rincones, historias y detalles que hacen que Buenos Aires sea única. Su arquitectura, su historia, su cultura, su comida y, sobre todo, su gente me siguen sorprendiendo.</p>
+        <p>Creé Buen Ayre Tours para compartir la ciudad que amo a través de experiencias privadas y personalizadas, adaptando cada recorrido a los intereses, el ritmo y las necesidades de cada viajero.</p>
+        <p>¿Mi objetivo? Que vos también te enamores de Buenos Aires.</p>
+      </div>
+
+      <p class="firma">
+        <span data-lang="en">Discover. Feel. Remember with me.</span>
+        <span data-lang="es">Descubrí. Sentí. Recordá conmigo.</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ RESEÑAS ════════ -->
+<section class="seccion banda-terra" id="resenas">
+  <div class="wrap">
+    <div class="cabeza cabeza--centro rv">
+      <span class="eyebrow"><span data-lang="en">Reviews</span><span data-lang="es">Reseñas</span></span>
+      <h2><span data-lang="en">What travellers say</span><span data-lang="es">Lo que dicen los viajeros</span></h2>
+      <svg class="viento viento--tit viento--claro" viewBox="0 0 400 42" aria-hidden="true">
+        <path d="M2 27 C 72 6, 152 6, 212 20 S 342 36, 398 15"/>
+        <path d="M22 35 C 92 17, 168 17, 228 29 S 348 43, 398 27"/>
+        <path d="M64 18 C 114 4, 174 2, 218 11"/>
+      </svg>
+    </div>
+
+    <div class="resenas rv">
+      <blockquote class="resena">
+        <p>“Thank you for being a wonderful tour guide!”</p>
+      </blockquote>
+      <blockquote class="resena">
+        <p>“Débora, queríamos agradecerte por tu paciencia y guía el día de hoy. ¡La pasamos súper bien!”</p>
+      </blockquote>
+    </div>
+
+    <p class="resenas__link rv">
+      <a href="https://maps.app.goo.gl/cEFyeti1Xy9fyKQ78" target="_blank" rel="noopener">
+        <span data-lang="en">Read all the reviews on Google</span><span data-lang="es">Leer todas las reseñas en Google</span>
+      </a>
+    </p>
+  </div>
+</section>
+
+<!-- ════════ FAQ ════════ -->
+<section class="seccion" id="faq">
+  <div class="wrap">
+    <div class="cabeza rv">
+      <span class="eyebrow"><span data-lang="en">Frequent questions</span><span data-lang="es">Preguntas frecuentes</span></span>
+      <h2><span data-lang="en">Before you book</span><span data-lang="es">Antes de reservar</span></h2>
+      <svg class="viento viento--tit" viewBox="0 0 400 42" aria-hidden="true">
+        <path d="M2 27 C 72 6, 152 6, 212 20 S 342 36, 398 15"/>
+        <path d="M22 35 C 92 17, 168 17, 228 29 S 348 43, 398 27"/>
+        <path d="M64 18 C 114 4, 174 2, 218 11"/>
+      </svg>
+    </div>
+
+    <div class="faq rv">
+      <details>
+        <summary><span data-lang="en">How can I book a tour?</span><span data-lang="es">¿Cómo puedo reservar un tour?</span></summary>
+        <div class="faq__r">
+          <p data-lang="en">You can contact me through the contact form or via WhatsApp. Tell me what type of experience you are interested in, the date, number of people and where you are staying, and I will send you a personalized proposal. If you have any special requests, you can include them as well.</p>
+          <p data-lang="es">Podés contactarme a través del formulario de contacto o por WhatsApp. Contame qué tipo de experiencia te interesa, la fecha, cantidad de personas y dónde se hospedan, y te enviaré una propuesta personalizada. Si tenés algún pedido especial, también podés agregarlo.</p>
+        </div>
+      </details>
+      <details>
+        <summary><span data-lang="en">Are the tours private?</span><span data-lang="es">¿Los tours son privados?</span></summary>
+        <div class="faq__r">
+          <p data-lang="en">Yes. All our experiences are private and designed so you can enjoy Buenos Aires at your own pace. We can also adapt the proposed itineraries to your interests.</p>
+          <p data-lang="es">Sí. Todas las experiencias son privadas y están diseñadas para que disfrutes Buenos Aires a tu propio ritmo. Podemos adaptar los recorridos planteados según tus intereses.</p>
+        </div>
+      </details>
+      <details>
+        <summary><span data-lang="en">How do I confirm my booking?</span><span data-lang="es">¿Cómo confirmo la reserva?</span></summary>
+        <div class="faq__r">
+          <p data-lang="en">Your booking is confirmed once you accept the proposal and make the required payment or deposit. I will send you all the booking details in writing.</p>
+          <p data-lang="es">La reserva queda confirmada una vez aceptada la propuesta y realizado el pago o seña correspondiente. Te enviaré todos los detalles de la reserva por escrito.</p>
+        </div>
+      </details>
+      <details>
+        <summary><span data-lang="en">Is transportation included?</span><span data-lang="es">¿El transporte está incluido?</span></summary>
+        <div class="faq__r">
+          <p data-lang="en">It depends on the tour you choose. Your proposal will clearly indicate the transportation arrangements and which services are included.</p>
+          <p data-lang="es">Depende del tour elegido. La propuesta indica el traslado y qué servicios están incluidos.</p>
+        </div>
+      </details>
+      <details>
+        <summary><span data-lang="en">Are entrance fees included?</span><span data-lang="es">¿El precio incluye las entradas?</span></summary>
+        <div class="faq__r">
+          <p data-lang="en">Entrance fees to museums, institutions, shows and other attractions are indicated separately when they are not included in the tour price.</p>
+          <p data-lang="es">Las entradas a museos, instituciones y espectáculos se indican por separado cuando no están incluidas en el precio del tour.</p>
+        </div>
+      </details>
+      <details>
+        <summary><span data-lang="en">Can I request a tour for the same day?</span><span data-lang="es">¿Puedo solicitar un tour para el mismo día?</span></summary>
+        <div class="faq__r">
+          <p data-lang="en">We recommend booking 48 hours in advance to ensure guide and transportation availability. Requests with less notice are subject to availability. Visits to AMIA and the Jewish Museum require a minimum of 48 hours' advance notice.</p>
+          <p data-lang="es">Recomendamos reservar con 48 horas de anticipación para garantizar disponibilidad. Las solicitudes con menos tiempo están sujetas a disponibilidad de guía y transporte. Para las visitas a AMIA y al Museo Judío se requiere un mínimo de 48 horas de anticipación.</p>
+        </div>
+      </details>
+      <details>
+        <summary><span data-lang="en">Can I cancel or modify a booking?</span><span data-lang="es">¿Puedo cancelar o modificar una reserva?</span></summary>
+        <div class="faq__r">
+          <p data-lang="en">Yes, you can request changes or cancellations in advance. In case of cancellation, the deposit paid is non-refundable. Changes are subject to availability.</p>
+          <p data-lang="es">Sí, podés solicitar cambios o cancelaciones con anticipación. En caso de cancelación, la seña abonada no es reembolsable. Los cambios están sujetos a disponibilidad.</p>
+        </div>
+      </details>
+      <details>
+        <summary><span data-lang="en">Where does the tour start and end?</span><span data-lang="es">¿Dónde comienza y termina el tour?</span></summary>
+        <div class="faq__r">
+          <p data-lang="en">The tour starts and ends at your accommodation. If you need to change either location, we can coordinate it in advance, as long as the new location does not involve a significant detour.</p>
+          <p data-lang="es">El tour comienza y termina en tu alojamiento. Si necesitás cambiar alguno de los puntos, podemos coordinarlo con anticipación, siempre que la nueva ubicación no implique un desvío significativo.</p>
+        </div>
+      </details>
+      <details>
+        <summary><span data-lang="en">Do you offer other services?</span><span data-lang="es">¿Ofrecen otros servicios además de los tours?</span></summary>
+        <div class="faq__r">
+          <p data-lang="en">Yes. We also offer private transfers to and from airports, tango nights, gastronomic experiences and other personalized activities. Contact us and we'll be happy to work it out with you.</p>
+          <p data-lang="es">Sí. También ofrecemos traslados privados desde y hacia aeropuertos, además de noches de tango, experiencias gastronómicas y otras actividades personalizadas.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ CONTACTO ════════ -->
+<section class="seccion banda-arena" id="contacto">
+  <div class="wrap">
+    <div class="cabeza cabeza--centro rv">
+      <span class="eyebrow"><span data-lang="en">Contact us</span><span data-lang="es">Contacto</span></span>
+      <h2>
+        <span data-lang="en">Planning your Buenos Aires trip?</span>
+        <span data-lang="es">¿Venís a Buenos Aires?</span>
+      </h2>
+      <svg class="viento viento--tit" viewBox="0 0 400 42" aria-hidden="true">
+        <path d="M2 27 C 72 6, 152 6, 212 20 S 342 36, 398 15"/>
+        <path d="M22 35 C 92 17, 168 17, 228 29 S 348 43, 398 27"/>
+        <path d="M64 18 C 114 4, 174 2, 218 11"/>
+      </svg>
+      <p class="lede">
+        <span data-lang="en">Have a question or ready to book? Get in touch and tell me what you're looking for — I'll come back to you with availability and a personalized proposal.</span>
+        <span data-lang="es">¿Tenés una duda o querés reservar? Escribime y contame qué estás buscando: te respondo con disponibilidad y una propuesta personalizada.</span>
+      </p>
+    </div>
+
+    <div class="contacto">
+      <aside class="wa rv">
+        <h3><span data-lang="en">WhatsApp</span><span data-lang="es">WhatsApp</span></h3>
+        <p>
+          <span data-lang="en">The fastest way. Send me a message with your plans and I'll answer your questions, check availability and help you choose the right experience.</span>
+          <span data-lang="es">La vía más rápida. Mandame un mensaje con tus planes y te respondo dudas, disponibilidad y qué experiencia te conviene.</span>
+        </p>
+        <a class="btn btn--terra" href="#form" data-wa data-wa-msg="Hi Débora! I found your website and I'd like to ask about a tour in Buenos Aires.">
+          <span data-lang="en">Message me on WhatsApp</span><span data-lang="es">Escribime por WhatsApp</span>
+        </a>
+        <p class="wa__nota">
+          <span data-lang="en">Prefer to fill in a form? The one beside this opens WhatsApp with everything already written.</span>
+          <span data-lang="es">¿Preferís completar un formulario? El de al lado abre WhatsApp con todo ya escrito.</span>
+        </p>
+      </aside>
+
+      <form class="form rv" id="form" novalidate>
+        <h3><span data-lang="en">Contact form</span><span data-lang="es">Formulario de contacto</span></h3>
+        <p class="form__intro">
+          <span data-lang="en">Fill in your details and the button opens WhatsApp with the message ready — you just press send.</span>
+          <span data-lang="es">Completá tus datos y el botón abre WhatsApp con el mensaje listo: vos solo le das enviar.</span>
+        </p>
+
+        <div class="campo">
+          <label for="f-nombre"><span data-lang="en">Name</span><span data-lang="es">Nombre</span></label>
+          <input id="f-nombre" name="nombre" type="text" autocomplete="name" required>
+        </div>
+        <div class="campo">
+          <label for="f-wa"><span data-lang="en">WhatsApp or email</span><span data-lang="es">WhatsApp o email</span></label>
+          <input id="f-wa" name="contacto" type="text" autocomplete="tel" required>
+        </div>
+        <div class="campo campo--mitad">
+          <label for="f-fecha"><span data-lang="en">Date for the tour</span><span data-lang="es">Fecha del tour</span></label>
+          <input id="f-fecha" name="fecha" type="date">
+        </div>
+        <div class="campo campo--mitad">
+          <label for="f-personas"><span data-lang="en">Number of travelers</span><span data-lang="es">Cantidad de personas</span></label>
+          <input id="f-personas" name="personas" type="number" min="1" max="30" inputmode="numeric">
+        </div>
+        <div class="campo">
+          <label for="f-tour"><span data-lang="en">Tour you're interested in</span><span data-lang="es">Tour que te interesa</span></label>
+          <select id="f-tour" name="tour">
+            <option value=""></option>
+            <option value="Buenos Aires Essentials">Buenos Aires Essentials · City Tour</option>
+            <option value="Classic Jewish City Tour">Classic Jewish City Tour</option>
+            <option value="Tigre &amp; Delta">Tigre &amp; Delta + 5 Rivers</option>
+            <option value="The Estancia Experience">The Estancia Experience</option>
+            <option value="Walking Tour">Walking Tour</option>
+            <option value="Welcome to My Kitchen">Welcome to My Kitchen</option>
+            <option value="Otro / Other" data-lang-opt>Other · Otro</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="f-hotel"><span data-lang="en">Where are you staying?</span><span data-lang="es">¿Dónde te hospedás?</span></label>
+          <input id="f-hotel" name="hotel" type="text">
+        </div>
+        <div class="campo">
+          <label for="f-notas"><span data-lang="en">Special requests</span><span data-lang="es">Pedidos especiales</span></label>
+          <textarea id="f-notas" name="notas" rows="3"></textarea>
+        </div>
+
+        <button class="btn btn--terra btn--full" type="submit">
+          <span data-lang="en">Send on WhatsApp</span><span data-lang="es">Enviar por WhatsApp</span>
+        </button>
+        <p class="form__estado" id="form-estado" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ════════ PIE ════════ -->
+<footer class="pie">
+  <div class="wrap pie__in">
+    <div class="pie__marca">
+      <img src="img/sello-invertido.png" width="92" height="92" alt="Buen Ayre Tours" loading="lazy">
+      <p class="pie__lema">Discover. Feel. Remember.</p>
+    </div>
+
+    <nav class="pie__nav" aria-label="Footer">
+      <a href="#tours"><span data-lang="en">Tours</span><span data-lang="es">Tours</span></a>
+      <a href="#sobre-mi"><span data-lang="en">About me</span><span data-lang="es">Sobre mí</span></a>
+      <a href="#resenas"><span data-lang="en">Reviews</span><span data-lang="es">Reseñas</span></a>
+      <a href="#faq"><span data-lang="en">FAQ</span><span data-lang="es">Preguntas</span></a>
+      <a href="#contacto"><span data-lang="en">Contact</span><span data-lang="es">Contacto</span></a>
+    </nav>
+
+    <div class="pie__links">
+      <a href="https://maps.app.goo.gl/cEFyeti1Xy9fyKQ78" target="_blank" rel="noopener">Google</a>
+      <a href="https://instagram.com/buenayretours" target="_blank" rel="noopener">Instagram</a>
+      <a href="#contacto" data-wa data-wa-msg="Hi Débora! I found your website and I'd like to ask about a tour in Buenos Aires.">WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="wrap pie__legal">
+    <p>Buen Ayre Tours · <span data-lang="en">Licensed tour guide · Buenos Aires, Argentina</span><span data-lang="es">Guía de turismo matriculada · Buenos Aires, Argentina</span></p>
+    <p>© <span id="anio"></span> Buen Ayre Tours · <span data-lang="en">Site by</span><span data-lang="es">Sitio diseñado por</span> <a href="https://teocicciari.com.ar/" target="_blank" rel="noopener">Teo Cicciari</a></p>
+  </div>
+</footer>
+
+<script src="js/sitio.js"></script>
+</body>
+</html>
