@@ -171,17 +171,19 @@ h4{font-family:var(--util);font-weight:500;font-size:.68rem;letter-spacing:.2em;
 .hero__botones{display:flex;flex-wrap:wrap;gap:14px;margin-top:6px}
 
 /* ═══════════ ÍNDICE DE TOURS ═══════════ */
+/* las divisiones van en cada ítem, así no dependen de cuántos tours haya
+   ni dejan bloques sueltos cuando la última fila queda incompleta */
 .indice{
-  display:grid;grid-template-columns:repeat(6,1fr);
-  background:var(--terracota-profundo);color:var(--papel);
+  display:grid;grid-template-columns:repeat(7,1fr);
+  background:var(--terracota-profundo);color:var(--papel);overflow:hidden;
 }
 .indice__it{
-  padding:clamp(20px,2.4vw,30px) clamp(14px,1.6vw,22px);
+  padding:clamp(20px,2.4vw,30px) clamp(13px,1.4vw,20px);
   text-decoration:none;display:flex;flex-direction:column;gap:4px;
   border-right:1px solid rgba(248,243,236,.16);
+  border-bottom:1px solid rgba(248,243,236,.16);
   transition:background .3s var(--ease);
 }
-.indice__it:last-child{border-right:0}
 .indice__it:hover,.indice__it:focus-visible{background:rgba(0,0,0,.14)}
 .indice__it .wl{
   max-width:52px;color:var(--arena);opacity:0;margin-bottom:6px;
@@ -210,6 +212,8 @@ h4{font-family:var(--util);font-weight:500;font-size:.68rem;letter-spacing:.2em;
 .tour--inv .tour__txt{order:1}
 
 .tour__fotos{position:relative;padding-bottom:clamp(34px,5vw,58px)}
+/* tours con una sola foto: no hace falta reservar el espacio del recorte chico */
+.tour__fotos--sola{padding-bottom:0}
 .tour__f1{
   width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center;
   border-radius:3px;box-shadow:0 26px 60px rgba(42,29,22,.22);
@@ -253,6 +257,19 @@ h4{font-family:var(--util);font-weight:500;font-size:.68rem;letter-spacing:.2em;
 .incluye--no li::before{background:var(--tinta-suave);opacity:.5}
 .incluye--no li{color:var(--tinta-suave)}
 .incluye__pie{font-size:.82rem;color:var(--tinta-suave);margin-top:8px;font-style:italic}
+
+/* extensión opcional del tour (Luján 2 días) */
+.opcional{
+  margin-top:26px;padding:20px 22px;border-radius:0 3px 3px 0;
+  background:rgba(187,81,45,.07);border-left:2px solid var(--terracota);
+}
+.tour--ombu .opcional{background:rgba(76,88,68,.09);border-left-color:var(--ombu)}
+.opcional h4{color:var(--terracota-profundo);margin-bottom:6px}
+.tour--ombu .opcional h4{color:var(--ombu)}
+.opcional__sub{font-size:.86rem;color:var(--tinta-suave);margin-bottom:14px;line-height:1.5}
+.opcional ul{list-style:none;display:flex;flex-direction:column;gap:11px}
+.opcional li{font-size:.9rem;line-height:1.5;color:var(--tinta-suave)}
+.opcional li b{display:block;font-weight:500;color:var(--tinta)}
 
 .aviso{
   margin-top:22px;padding:14px 18px;
@@ -405,10 +422,12 @@ h4{font-family:var(--util);font-weight:500;font-size:.68rem;letter-spacing:.2em;
 .rv.in{opacity:1;transform:none}
 
 /* ═══════════ RESPONSIVE ═══════════ */
-@media (max-width:1040px){
+@media (max-width:1220px){
+  .indice{grid-template-columns:repeat(4,1fr)}
+}
+
+@media (max-width:920px){
   .indice{grid-template-columns:repeat(3,1fr)}
-  .indice__it:nth-child(3n){border-right:0}
-  .indice__it:nth-child(-n+3){border-bottom:1px solid rgba(248,243,236,.16)}
 }
 
 @media (max-width:860px){
@@ -441,9 +460,6 @@ h4{font-family:var(--util);font-weight:500;font-size:.68rem;letter-spacing:.2em;
 
 @media (max-width:620px){
   .indice{grid-template-columns:repeat(2,1fr)}
-  .indice__it{border-right:1px solid rgba(248,243,236,.16);border-bottom:1px solid rgba(248,243,236,.16)}
-  .indice__it:nth-child(2n){border-right:0}
-  .indice__it:nth-last-child(-n+2){border-bottom:0}
   .form{grid-template-columns:1fr}
   .campo--mitad{grid-column:1/-1}
   .hero{min-height:auto;padding-top:clamp(50px,14vh,90px)}
