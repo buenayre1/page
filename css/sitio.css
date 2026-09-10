@@ -313,7 +313,7 @@ h4{font-family:var(--util);font-weight:500;font-size:.68rem;letter-spacing:.2em;
 
 /* ═══════════ RESEÑAS ═══════════ */
 .resenas{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  display:grid;grid-template-columns:repeat(2,1fr);
   gap:clamp(20px,3vw,34px);margin-top:clamp(38px,5vw,54px);
 }
 .resena{
@@ -324,6 +324,14 @@ h4{font-family:var(--util);font-weight:500;font-size:.68rem;letter-spacing:.2em;
   font-family:var(--display);font-style:italic;font-size:clamp(1.2rem,2.2vw,1.5rem);
   line-height:1.45;color:#fff;
 }
+/* la reseña larga ocupa más ancho y baja un punto el cuerpo */
+.resena--larga{grid-column:span 2}
+.resena--larga p{font-size:clamp(1.08rem,1.8vw,1.3rem)}
+@media (max-width:640px){
+  .resenas{grid-template-columns:1fr}
+  .resena--larga{grid-column:span 1}
+}
+
 .resenas__link{margin-top:34px;text-align:center;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase}
 .resenas__link a{color:var(--arena);text-decoration:none;border-bottom:1px solid rgba(228,214,195,.45);padding-bottom:3px}
 .resenas__link a:hover,.resenas__link a:focus-visible{color:#fff;border-color:#fff}
