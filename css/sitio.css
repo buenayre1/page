@@ -225,6 +225,17 @@ h4{font-family:var(--util);font-weight:500;font-size:.68rem;letter-spacing:.2em;
 }
 .tour--inv .tour__f2{right:auto;left:-4px}
 
+/* tours con tres fotos: las dos chicas van en las esquinas de abajo */
+.tour__fotos--tres .tour__f2,
+.tour__fotos--tres .tour__f3{width:38%;aspect-ratio:4/5;object-fit:cover}
+.tour__f3{
+  position:absolute;left:-4px;bottom:0;width:38%;
+  border:6px solid var(--papel);border-radius:3px;
+  aspect-ratio:4/5;object-fit:cover;
+  box-shadow:0 18px 38px rgba(42,29,22,.24);
+}
+.tour--inv .tour__f3{left:auto;right:-4px}
+
 .tour__n{
   display:block;font-size:.7rem;font-weight:500;letter-spacing:.28em;
   color:var(--terracota);margin-bottom:12px;
@@ -475,7 +486,9 @@ h4{font-family:var(--util);font-weight:500;font-size:.68rem;letter-spacing:.2em;
   .form{grid-template-columns:1fr}
   .campo--mitad{grid-column:1/-1}
   .hero{min-height:auto;padding-top:clamp(50px,14vh,90px)}
-  .tour__f2{width:44%;border-width:5px}
+  .tour__f2,.tour__f3{width:44%;border-width:5px}
+  .tour__fotos--tres .tour__f2,
+  .tour__fotos--tres .tour__f3{width:41%;border-width:5px}
 }
 
 @media (max-width:430px){
