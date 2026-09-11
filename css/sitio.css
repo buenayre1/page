@@ -220,9 +220,13 @@ h4{font-family:var(--util);font-weight:500;font-size:.68rem;letter-spacing:.2em;
 }
 .tour__f2{
   position:absolute;right:-4px;bottom:0;width:41%;
+  aspect-ratio:4/5;object-fit:cover;
   border:6px solid var(--papel);border-radius:3px;
   box-shadow:0 18px 38px rgba(42,29,22,.24);
 }
+/* la del grupo en la estancia es apaisada y el grupo ocupa todo el ancho:
+   si se recorta a 4:5 se pierde gente de los costados */
+.tour--inv.tour--ombu .tour__f2{aspect-ratio:auto}
 .tour--inv .tour__f2{right:auto;left:-4px}
 
 /* tours con tres fotos: las dos chicas van en las esquinas de abajo */
@@ -486,7 +490,7 @@ h4{font-family:var(--util);font-weight:500;font-size:.68rem;letter-spacing:.2em;
   .form{grid-template-columns:1fr}
   .campo--mitad{grid-column:1/-1}
   .hero{min-height:auto;padding-top:clamp(50px,14vh,90px)}
-  .tour__f2,.tour__f3{width:44%;border-width:5px}
+  .tour__f2,.tour__f3{border-width:5px}
   .tour__fotos--tres .tour__f2,
   .tour__fotos--tres .tour__f3{width:41%;border-width:5px}
 }
