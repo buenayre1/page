@@ -162,10 +162,20 @@ var WHATSAPP = '5491122609166';
       if (contacto.indexOf('@') > 0) datos.append('replyto', contacto);
       datos.append('idioma', html.getAttribute('lang') === 'es' ? 'Español' : 'Inglés');
 
+      // va como JSON a propósito: con FormData, Web3Forms contesta con una
+      // página HTML de éxito y r.json() explota, así que el visitante vería
+      // un error aunque el mail haya salido
+      var cuerpo = {};
+      datos.forEach(function (valor, clave) { cuerpo[clave] = valor; });
+
       estado.textContent = t('enviando');
       if (boton) boton.disabled = true;
 
-      fetch('https://api.web3forms.com/submit', { method: 'POST', body: datos })
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(cuerpo)
+      })
         .then(function (r) { return r.json().catch(function () { return {}; }); })
         .then(function (d) {
           if (d && d.success) {
