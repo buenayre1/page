@@ -732,16 +732,22 @@
           <span data-lang="en">Message me on WhatsApp</span><span data-lang="es">Escribime por WhatsApp</span>
         </a>
         <p class="wa__nota">
-          <span data-lang="en">Prefer to fill in a form? The one beside this opens WhatsApp with everything already written.</span>
-          <span data-lang="es">¿Preferís completar un formulario? El de al lado abre WhatsApp con todo ya escrito.</span>
+          <span data-lang="en">Don't use WhatsApp? Fill in the form beside this one and I'll reply by email.</span>
+          <span data-lang="es">¿No usás WhatsApp? Completá el formulario de al lado y te respondo por mail.</span>
         </p>
       </aside>
 
-      <form class="form rv" id="form" novalidate>
+      <form class="form rv" id="form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+        <input type="hidden" name="access_key" value="d8eb0798-55c9-4540-b04c-cf9edaccb1ab">
+        <input type="hidden" name="subject" value="Nueva consulta desde buenayretours.com.ar">
+        <input type="hidden" name="from_name" value="Buen Ayre Tours">
+        <!-- trampa para bots: si viene completado, Web3Forms descarta el envío -->
+        <input type="checkbox" name="botcheck" class="trampa" tabindex="-1" autocomplete="off">
+
         <h3><span data-lang="en">Contact form</span><span data-lang="es">Formulario de contacto</span></h3>
         <p class="form__intro">
-          <span data-lang="en">Fill in your details and the button opens WhatsApp with the message ready — you just press send.</span>
-          <span data-lang="es">Completá tus datos y el botón abre WhatsApp con el mensaje listo: vos solo le das enviar.</span>
+          <span data-lang="en">Fill in your details and I'll get back to you by email with availability and a proposal.</span>
+          <span data-lang="es">Completá tus datos y te respondo por mail con disponibilidad y una propuesta.</span>
         </p>
 
         <div class="campo">
@@ -784,7 +790,7 @@
         </div>
 
         <button class="btn btn--terra btn--full" type="submit">
-          <span data-lang="en">Send on WhatsApp</span><span data-lang="es">Enviar por WhatsApp</span>
+          <span data-lang="en">Send my request</span><span data-lang="es">Enviar consulta</span>
         </button>
         <p class="form__estado" id="form-estado" role="status" aria-live="polite"></p>
       </form>

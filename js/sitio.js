@@ -4,8 +4,9 @@
    WhatsApp de Débora: +54 9 11 2260-9166
    (en formato wa.me va sin +, sin espacios y sin guiones)
 
-   El formulario no manda mail: arma un mensaje con los datos cargados
-   y abre WhatsApp con todo escrito, listo para que el viajero lo envíe.
+   El formulario manda un mail a buenayretours@gmail.com a través de
+   Web3Forms. El botón de WhatsApp queda aparte, como vía rápida: así el
+   que no usa WhatsApp igual tiene por dónde escribir.
    ═══════════════════════════════════════════════════════════ */
 
 var WHATSAPP = '5491122609166';
@@ -128,27 +129,28 @@ var WHATSAPP = '5491122609166';
   var TXT = {
     en: {
       faltan: 'Please fill in your name and how I can reach you.',
-      abriendo: 'Opening WhatsApp with your request — press send there.',
-      saludo: 'Hi Débora! I\'d like to ask about a tour in Buenos Aires.',
-      nombre: 'Name', contacto: 'Contact', tour: 'Tour', fecha: 'Date',
-      personas: 'Travelers', hotel: 'Staying at', notas: 'Notes'
+      enviando: 'Sending…',
+      ok: 'Thanks! I got your message and I\'ll get back to you shortly.',
+      error: 'It didn\'t go through. Please write to me on WhatsApp instead.'
     },
     es: {
       faltan: 'Completá tu nombre y por dónde te contesto.',
-      abriendo: 'Abriendo WhatsApp con tu consulta — ahí le das enviar.',
-      saludo: '¡Hola Débora! Quería consultarte por un tour en Buenos Aires.',
-      nombre: 'Nombre', contacto: 'Contacto', tour: 'Tour', fecha: 'Fecha',
-      personas: 'Personas', hotel: 'Se hospeda en', notas: 'Notas'
+      enviando: 'Enviando…',
+      ok: '¡Gracias! Recibí tu consulta y te respondo a la brevedad.',
+      error: 'No se pudo enviar. Escribime por WhatsApp, por favor.'
     }
   };
   function t(clave) { return TXT[html.getAttribute('lang') === 'es' ? 'es' : 'en'][clave]; }
 
   if (form) {
+    var boton = form.querySelector('button[type="submit"]');
+
     form.addEventListener('submit', function (ev) {
       ev.preventDefault();
-      var d = new FormData(form);
-      var nombre = (d.get('nombre') || '').trim();
-      var contacto = (d.get('contacto') || '').trim();
+
+      var datos = new FormData(form);
+      var nombre = (datos.get('nombre') || '').trim();
+      var contacto = (datos.get('contacto') || '').trim();
 
       if (!nombre || !contacto) {
         estado.textContent = t('faltan');
@@ -156,21 +158,29 @@ var WHATSAPP = '5491122609166';
         return;
       }
 
-      var lineas = [t('saludo'), ''];
-      function sumar(clave, valor) {
-        valor = (valor || '').toString().trim();
-        if (valor) lineas.push(t(clave) + ': ' + valor);
-      }
-      sumar('nombre', nombre);
-      sumar('contacto', contacto);
-      sumar('tour', d.get('tour'));
-      sumar('fecha', d.get('fecha'));
-      sumar('personas', d.get('personas'));
-      sumar('hotel', d.get('hotel'));
-      sumar('notas', d.get('notas'));
+      // si dejó un mail, que ella pueda contestar con Responder
+      if (contacto.indexOf('@') > 0) datos.append('replyto', contacto);
+      datos.append('idioma', html.getAttribute('lang') === 'es' ? 'Español' : 'Inglés');
 
-      estado.textContent = t('abriendo');
-      window.open(waLink(lineas.join('\n')), '_blank', 'noopener');
+      estado.textContent = t('enviando');
+      if (boton) boton.disabled = true;
+
+      fetch('https://api.web3forms.com/submit', { method: 'POST', body: datos })
+        .then(function (r) { return r.json().catch(function () { return {}; }); })
+        .then(function (d) {
+          if (d && d.success) {
+            form.reset();
+            estado.textContent = t('ok');
+          } else {
+            estado.textContent = t('error');
+          }
+        })
+        .catch(function () {
+          estado.textContent = t('error');
+        })
+        .then(function () {
+          if (boton) boton.disabled = false;
+        });
     });
   }
 
