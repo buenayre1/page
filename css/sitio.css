@@ -378,8 +378,9 @@ h4{font-family:var(--util);font-weight:500;font-size:.68rem;letter-spacing:.2em;
 /* ═══════════ CONTACTO ═══════════ */
 #contacto .cabeza{margin-bottom:clamp(38px,5vw,56px)}
 .contacto{
-  display:grid;grid-template-columns:minmax(0,.72fr) minmax(0,1fr);
-  gap:clamp(26px,4vw,54px);align-items:stretch;
+  display:grid;grid-template-columns:1fr;
+  gap:clamp(20px,3vw,30px);
+  max-width:680px;margin:0 auto;
 }
 .wa{
   background:var(--papel);border-radius:4px;
@@ -480,7 +481,7 @@ h4{font-family:var(--util);font-weight:500;font-size:.68rem;letter-spacing:.2em;
   .btn--wa span{display:none}
   .btn--wa{padding:10px 12px}
 
-  .tour,.sobre,.contacto{grid-template-columns:1fr}
+  .tour,.sobre{grid-template-columns:1fr}
   .tour--inv .tour__fotos{order:0}
   .tour--inv .tour__txt{order:0}
   .tour__fotos{max-width:520px}
