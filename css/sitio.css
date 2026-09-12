@@ -222,9 +222,9 @@ h4{font-family:var(--util);font-weight:500;font-size:.68rem;letter-spacing:.2em;
   border:6px solid var(--papel);border-radius:3px;
   box-shadow:0 18px 38px rgba(42,29,22,.24);
 }
-/* la del grupo en la estancia es apaisada y el grupo ocupa todo el ancho:
-   si se recorta a 4:5 se pierde gente de los costados */
-.tour--inv.tour--ombu .tour__f2{aspect-ratio:auto}
+/* fotos ya recortadas en apaisado (no 4:5): se agrandan un poco, si no
+   quedan muy chicas de alto frente a la vertical grande de al lado */
+.tour__f2--apaisada{aspect-ratio:auto;width:58%}
 .tour--inv .tour__f2{right:auto;left:-4px}
 
 /* tours con tres fotos: las dos chicas van en las esquinas de abajo */
