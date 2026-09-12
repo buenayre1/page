@@ -20,11 +20,11 @@ var WHATSAPP = '5491122609166';
   var META = {
     en: {
       title: 'Buen Ayre Tours · Private tours in Buenos Aires',
-      desc: 'Private, personalized tours in Buenos Aires with Débora, a licensed local guide. City tour, Jewish heritage, Tigre Delta, estancia day, walking tour and a home cooking class.'
+      desc: 'Private, personalized tours in Buenos Aires with Débora, a licensed local guide. City tour, Jewish heritage, Tigre, estancia, walking tour, cooking class and Luján.'
     },
     es: {
       title: 'Buen Ayre Tours · Tours privados en Buenos Aires',
-      desc: 'Tours privados y personalizados en Buenos Aires con Débora, guía de turismo matriculada. City tour, judaico, Tigre, día de campo, recorrido a pie y clase de cocina.'
+      desc: 'Tours privados y personalizados en Buenos Aires con Débora, guía de turismo matriculada. City tour, judaico, Tigre, día de campo, recorrido a pie, cocina y Luján.'
     }
   };
 
