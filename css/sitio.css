@@ -212,8 +212,6 @@ h4{font-family:var(--util);font-weight:500;font-size:.68rem;letter-spacing:.2em;
 .tour--inv .tour__txt{order:1}
 
 .tour__fotos{position:relative;padding-bottom:clamp(34px,5vw,58px)}
-/* tours con una sola foto: no hace falta reservar el espacio del recorte chico */
-.tour__fotos--sola{padding-bottom:0}
 .tour__f1{
   width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center;
   border-radius:3px;box-shadow:0 26px 60px rgba(42,29,22,.22);
