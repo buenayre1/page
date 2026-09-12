@@ -293,8 +293,11 @@ h4{font-family:var(--util);font-weight:500;font-size:.68rem;letter-spacing:.2em;
   display:flex;flex-wrap:wrap;gap:16px;justify-content:center;
   margin-top:clamp(24px,3vw,34px);
 }
+/* sin proporción forzada: la de la mesa es apaisada y tiene gente en los dos
+   bordes, así que cualquier recorte vertical se come a alguien. Se igualan
+   por altura y cada una conserva su forma */
 .extras img{
-  width:clamp(130px,17vw,190px);aspect-ratio:4/5;object-fit:cover;
+  height:clamp(155px,19vw,210px);width:auto;
   border-radius:3px;box-shadow:0 14px 30px rgba(42,29,22,.16);
 }
 
