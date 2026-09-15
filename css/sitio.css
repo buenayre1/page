@@ -509,15 +509,26 @@ h4{font-family:var(--util);font-weight:500;font-size:.68rem;letter-spacing:.2em;
   .tour__fotos--tres .tour__f3{width:41%;border-width:5px}
 }
 
-@media (max-width:430px){
-  .barra__in{gap:10px}
-  .marca img{width:32px;height:32px}
-  .marca__txt{font-size:1.12rem}
-  .idioma{gap:4px}
-  .btn--wa{padding:9px 10px}
-  .hamb{width:34px}
+@media (max-width:455px){
+  .barra__in{gap:6px}
+  .marca{gap:7px}
+  .marca img{width:30px;height:30px}
+  .marca__txt{font-size:1rem}
+  /* "Tours" se pierde en la marca, ya lo dice el logo y el <title> de la pestaña */
+  .marca__txt em{display:none}
+  .idioma{gap:3px}
+  .icono-ig svg{width:17px;height:17px}
+  .btn--wa{padding:9px 9px}
+  .hamb{width:30px}
   .indice__it .t{font-size:1.05rem}
   .btn{padding:12px 22px;font-size:.68rem}
+}
+
+/* celulares muy angostos (320-340px): con "Tours" afuera seguía sin entrar */
+@media (max-width:345px){
+  .marca__txt{display:none}
+  .idioma{gap:2px}
+  .btn--wa{padding:9px 8px}
 }
 
 @media (prefers-reduced-motion:reduce){
